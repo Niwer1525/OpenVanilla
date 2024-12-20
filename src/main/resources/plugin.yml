@@ -1,0 +1,52 @@
+name: open_vanilla
+main: com.ovanilla.Plugin
+version: 1.0
+api-version: 1.15
+description: A simple plugin for Minecraft Vanilla Like Servers. This add homes, money, teams and more !
+commands:
+  sethome:
+    description: Set your home location
+    usage: /sethome <name>
+    aliases: [sh]
+  delhome:
+    description: Delete your home location
+    usage: /delhome <name>
+    aliases: [dh]
+  homelist:
+    description: List all your homes (Or another player's homes, as an admin)
+    usage: /homelist (<player>)
+    aliases: [hl]
+  home:
+    description: Teleport to your home (Or another player's home, as an admin)
+    usage: /home <name> (<player>)
+    aliases: [h]
+  hub:
+    description: Teleport to the server's hub
+    usage: /hub
+  sethub:
+    description: Set the server's hub location
+    usage: /sethub
+    permission: open_vanilla.sethub
+  invsee:
+    description: Open another player's inventory
+    usage: /invsee <player>
+    permission: open_vanilla.invsee
+  ec:
+    description: Open another player's ender chest
+    usage: /ec (<player>)
+    permission: open_vanilla.ec
+  broadcast:
+    description: Broadcast a message to all players
+    usage: /broadcast (<player>) <message>
+    permission: open_vanilla.say
+  wallet:
+    description: Check your wallet balance or give/remove/set money to another player
+    usage: /wallet <amount> (<player>) (give/remove/set)
+    aliases: [bal, balance]
+  pay:
+    description: Pay another player
+    usage: /pay <player> <amount>
+  faction:
+    description: Create a faction or join one
+    usage: /faction <create/disband/invite/join/leave> (<name>)
+    aliases: [f]

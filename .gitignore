@@ -1,0 +1,7 @@
+target/
+.vscode/
+
+# Server folder
+server/*
+!server/start.bat
+!server/paper-1.21-130.jar
